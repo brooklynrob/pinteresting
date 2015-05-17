@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+    # Suggested by Devise -- OneMonthRails says "Requird by Heroku"
+  config.action_mailer.default_url_options = { host: 'dabestwebsite.com', port: 3000 }
+
 end
